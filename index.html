@@ -9,18 +9,19 @@
   <body>
     <script type="text/javascript" src="D:\dictionary\scripts\script.js"></script>
     <h1 id="pageHead">Dictionary</h1>
-    <fieldset>
+    <fieldset class="myFields">
       <legend><strong>Enter a word</strong></legend>
-      <input id="myWord" type="text">
-      <button type="submit" onclick="addWords()">Add word</button><br>
+      <input class="inputBox" id="enteredWord" type="text" placeholder="Type your word...">
+      <button type="submit" onclick="addWords()">Add word</button>
     </fieldset>
-    <div></div><br>
-    <fieldset>
+    <fieldset class="myFields">
       <legend><strong>Search a word</strong></legend>
-      <input type="search" id="mySearch" placeholder="Search..">
-      <button>Search</button>
+      <input class="inputBox" type="text" id="searchedWord" placeholder="Search...">
+      <button type="search" onclick="searchWord()">Search</button>
     </fieldset>
-    <ul id="myWords">
-    </ul>
+    <fieldset id="listPlace">
+      <ul id="wordsList">
+      </ul>
+    </fieldset>
   </body>
 </html>

@@ -3,11 +3,11 @@ const words = [];
 function addWords() {
   let inputValue = document.getElementById("enteredWord").value;
   if (inputValue != "") {
-  let liElement = document.createElement("li");
-  const textNode = document.createTextNode(inputValue);
-  liElement.appendChild(textNode)
-  document.getElementById("wordsList").appendChild(liElement);
-  words.push(inputValue);
+    let liElement = document.createElement("li");
+    const textNode = document.createTextNode(inputValue);
+    liElement.appendChild(textNode)
+    document.getElementById("wordsList").appendChild(liElement);
+    words.push(inputValue);
   } else {
     alert("You must enter a word before click the 'Add word' button.")
   }
